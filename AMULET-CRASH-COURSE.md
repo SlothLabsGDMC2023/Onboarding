@@ -26,6 +26,8 @@ This is where you can see your existing Minecraft worlds or drag in new ones (li
 
 Make sure to open your worlds from this folder in the Amulet editor.
 
+If you don't have Minecraft, do not want to generate a map, or just want to see what the competition map looked like in 2025, you can download it from [here](https://www.dropbox.com/scl/fi/jsb1u4pjrs585sdj3e3kx/GDMC-2025-submission-map.zip?rlkey=2ckuzun7t3oyzvtskkxf354h4&e=1&st=mqeo01d4&dl=0). In the 2025 competition, the four locations where settlements had to be generated were the Riverlands at (0, 0), +-500; the Mesa Valley at (4000, 0), +-200; the Caldera at (9000, 500), +- 200; and the Pirate Coast at (-2850, 4800), +- 350; (all given as (x,z) with the range within the settlement had to be built).
+
 ## 3. Using Amulet
 
 Now try launching the Amulet application `amulet_app.exe` and load into your Minecraft World. 
