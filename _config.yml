@@ -1,0 +1,13 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - AMULET-CRASH-COURSE.md
+  - ASSIGNMENTS.md
+  - BOX-SPLIT-GRAMMAR.md
+  - FIRST-STRUCTURE.md
+  - INTEGRATION.md
+  - RESOURCES.md
