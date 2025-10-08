@@ -6,7 +6,8 @@ The concepts and grammar system we use are based on the work presented in [**Ins
 
 ## Onboarding Roadmap
 
- 1. **[Setup and Amulet Crash Course](./AMULET-CRASH-COURSE.md)** 
+ 0. **[SlothLab Repository Setup](./REPO-SETUP.md)** 
+ 1. **[Amulet Crash Course](./AMULET-CRASH-COURSE.md)** 
  2. **[Box-Split Grammar Overview](./BOX-SPLIT-GRAMMAR.md)** 
  3. **[Your First Structure](./FIRST-STRUCTURE.md)** 
  4. **[Integration into Core](./INTEGRATION.md)** 

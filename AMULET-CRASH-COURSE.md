@@ -60,7 +60,7 @@ in Amulet, **Operations** are the python scripts we use to manipulate the Minecr
     * **Dropdown Menu:** This is where you select which operation to run.
     * **Refresh Button:** Reloads the operations from the plugins folder. **You will use this a lot** as you edit your structure generator file and want to see your changes.
     * **Folder Icon:** This opens the folder where all the python scripts are located. This is the folder you will be working in with your code editor. The path will be something like `AppData\Local\AmuletTeam\AmuletMapEditor\plugins\operations`. 
-        > **Important:** Copy the Operations folder path and save it somewhere to easily paste into your IDE when you choose to edit the operatons therein.
+        > **Very Important:** Make sure you **copy** the contents of your locally cloned SlothLab repo into this folder so you can access the grammar properly. You may also want to copy the Operations folder path and save it somewhere to easily paste into your IDE when you choose to edit the operatons therein.
 4.  **Run the Operation:** Below this menu is the **Run Operation** button. Click this to test your script on the selected region. 
 
 

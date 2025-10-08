@@ -2,6 +2,14 @@
 
 Here you will learn how to create a new, standalone, structure module.
 
+> **Very Important!**
+>
+> Before beginning, ensure you have copied the contents from the _Master branch_ from the SlothLab repository into Amulet's `plugins\operations` folde. This ensures Amulet has access to the Box-Split Grammar, Settlement Generation, and other required systems. If you skip this step, your operation will not run correctly and you will be missing files. In short:
+>
+>* The contents of Amulet\plugins\operations should match the contents of the SlothLab Master branch.
+>* When you create your own structure generation module, do so within the plugins\operations folder so you can test and run it locally.
+>* If there are major updates to the Grammar or Settlement Generation code, you can safely pull from the SlothLab repo again and copy only the updated files into Amulet’s plugins\operations folder.
+
 ### 1. Plan Your Structure
 
 First, decide what you want to build! We suggest you start by thinking of a fitting building our medieval village could use (check the current integrated structures in the `core.py` file).
