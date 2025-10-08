@@ -10,6 +10,8 @@ First, decide what you want to build! We suggest you start by thinking of a fitt
 
 * **Think in Grammar:** Once you have a design, think about how it would have to work logically with our grammar in mind. How would you divide it into individual rows and columns? Try to imagine how you might roughly need to go about it—the types of splits, what sort of variation you would want, the block types, etc.
 
+ > **Important:** You will soon notice that complex structure designs tend to be relatively difficult to replicate with the grammar, so consider simplifying the intricacies of the structure you choose for now to better get a hang of the system. 
+
 ### 2. Create Your Module File
 Navigate to the `plugins/operations` folder.
 1.  **Create** a new Python file, e.g., `MakeForge.py`.
@@ -55,7 +57,7 @@ def performOperation(world, dim, selection_group, options):
     box = selection_group.selection_boxes[0]
     # Initialize the grammar system
     sc = start_symbol(BoundingBox(box.min, box.shape), world, dim)
-    if sc:
+    if sc is not None:
         forge() # This calls your main rule!
 
 # This dictionary tells Amulet the name to display in the operations list

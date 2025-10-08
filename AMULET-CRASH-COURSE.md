@@ -1,6 +1,8 @@
 # Amulet Editor Crash Course
 
-Learn how to set up your environment and familiarize yourself with the basics of the Minecraft world editor, Amulet.
+Learn how to set up your environment and familiarize yourself with the basics of the Minecraft world editor, Amulet. 
+
+ > **Important:** If you do not already have Git installed or the SlothLab repo set up, click [here](./REPO-SETUP.md)!
 
 ## 1. Software Installation 
 You will need both **Minecraft** and **Amulet**.
@@ -9,7 +11,7 @@ You will need both **Minecraft** and **Amulet**.
 
 * **Amulet:** Visit the [Amulet](https://www.amuletmc.com/) website and follow the provided instructions to download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`.  
 
-> We suggest creating a shortcut for Amulet (if not created by default) for ease of access. 
+> **Important:** We suggest creating a shortcut for Amulet (if not created by default) for ease of access. 
 
 ## 2. Prepare Your Minecraft World
 
