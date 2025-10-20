@@ -17,7 +17,7 @@
     > The official Amulet API community. A friendly place to ask questions if you need help!
 
 ### Minecraft References
-- [**Minecraft Block IDs**](https://minecraft-ids.grahamedgecombe.com/)
+- [**Minecraft Block IDs**](https://minecraftitemids.com/)
     > All of Minecraft's block IDs. You need to use these to generate specific blocks in your generation scripts.
 - [**Minecraft Building Reference**](https://builditapp.com/) 
     > A great source of in-game buildings to model your structure off of.

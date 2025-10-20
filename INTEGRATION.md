@@ -33,7 +33,7 @@ BUILDING_TYPES = [
 - `module`: The name of the module you just imported (e.g., MakeForge).
 - `function_name`: A string containing the name of your main rule function defined in the module's entrypoint (e.g., "forge").
 - `weight`: An integer that determines how frequently your structure appears. A higher weight means it's more common.
-- `height_modifier` (Optional): An integer to adjust the vertical placement. Useful for multi-level buildings like towers (the default height is more suitable for single story structures).
+- `height_modifier` (Optional): An integer to adjust the vertical placement. Useful for multi-level buildings like towers (the default height is more suitable for single story structures). If you notice your buildings getting squished or cut off - this is the parameter to adjust!
 
 ### 4. Test the Integration
 1. Save your changes to core.py.
@@ -41,4 +41,4 @@ BUILDING_TYPES = [
 3. Run the main Settlement Generator operation.
 4. Your forge should now appear as one of the buildings in the generated settlements! It will also be a toggleable option in the menu that appears when you run the generator.
 
-**Next Steps:** Great work! Feel free to check out the Assignments page to dig deeper into structure generation: **[Assignments](./ASSIGNMENTS.md)**.
+**Next Steps:** Great work! Feel free to check out the Assignments page to dig deeper into structure generation: **[Assignments](./ASSIGNMENTS.md)** (WIP).
