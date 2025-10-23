@@ -134,7 +134,7 @@ After cloning, you’ll need to copy your local repository into the Amulet opera
 
 ### Steps
 
-1. **Copy** your SlothLab local repository into the `operations` folder.
+1. **Copy** the entirety (every folder and file) of your SlothLab local `generator` repository into Amulet's `operations` folder. To be clear, this includes directories like `\settlement`, `\buildsite`, or anything else! 
 2. You’ll now be able to **test** scripts (like structure generators) directly inside Amulet.
 3. When your structure generator works perfectly, **copy it back** into your main local repo to prepare it for commit and push.
 
