@@ -1,6 +1,6 @@
 # Setting Up the SlothLab Repository
 
-> **Note:** You may skip this guide if you have already cloned the repository, copied it into the Amulet operations folder, and are familiar with Git basics.
+> **Note:** You may skip this guide if you have already cloned the `generator` repository, copied *all* of its contents into the Amulet operations folder, and are familiar with Git basics. If you are unsure about any of those things, please follow the guide below.
 
 Welcome to the SlothLab project!  
 This guide will walk you through installing Git, setting up your local environment, and understanding how our repository structure and version control workflow operate.
@@ -136,7 +136,7 @@ After cloning, you’ll need to copy your local repository into the Amulet opera
 
 1. **Copy** the entirety (every folder and file) of your SlothLab local `generator` repository into Amulet's `operations` folder. To be clear, this includes directories like `\settlement`, `\buildsite`, or anything else! 
 2. You’ll now be able to **test** scripts (like structure generators) directly inside Amulet.
-3. When your structure generator works perfectly, **copy it back** into your main local repo to prepare it for commit and push.
+3. When your additions to the code works perfectly, **copy them back** into your local repo to prepare it for commit and push to a feature branch of your creation. Upon sharing your contribution with the lab, we can get it pushed to the master branch.
 
 > Important: **Always remember to pull before pushing changes!**
 >
