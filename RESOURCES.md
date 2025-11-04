@@ -25,3 +25,5 @@
 ### Additional Info
 - [**GitHub Docs**](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
     > Git basics. How to clone a repository and any other essentials you will need to get started with the SlothLab repository.
+- [**Settlement Generation Competition**](https://gendesignmc.wikidot.com/wiki:2024-settlement-generation-competition)
+    > This is the website for the compeition we enter yearly. You can find the overview, submission deadlines, and previous competition winners/entries here!

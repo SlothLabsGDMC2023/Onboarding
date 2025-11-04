@@ -31,7 +31,7 @@ Navigate to the `plugins/operations` folder.
     from GrammarBox import BoundingBox
 
     # Grammar-specific imports
-    from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension, clearrules
+    from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension, clearrules, Constraint, reorient
 
     # This clears any previously loaded rules from this file, ensuring a clean slate on refresh
     clearrules(__file__)
@@ -84,7 +84,7 @@ export = {
 
 ## Example: Creating a `MakeTower` Module
    ```python
-   from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension
+   from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension, Constraint, reorient
    from GrammarBox import BoundingBox
    from amulet.api.selection import SelectionGroup, SelectionBox
    clearrules(__file__)

@@ -59,12 +59,12 @@ This is the core of our generation system. It works like a set of instructions t
    - Example: 
       ```python
       @rule(constraint=(Dimension.X > 5))
-      def wall_with_window():
+      def wall():
          # ... logic for a wall that includes a window ...
 
       @rule(constraint=Constraint.ELSE)
-      def solid_wall():
+      def wall():
          # ... logic for a solid wall, used if the above constraint fails ...
       ```
 
-**Next Steps:** The only way to truly get comfortable with this system is to play with it yourself! Take a look at the **[Your First Structure](./FIRST_STRUCTURE.md)** guide to get some hands on experience with our system.
+**Next Steps:** The only way to truly get comfortable with this system is to play with it yourself! Take a look at the **[Your First Structure](./FIRST-STRUCTURE.md)** guide to get some hands on experience with our system.
