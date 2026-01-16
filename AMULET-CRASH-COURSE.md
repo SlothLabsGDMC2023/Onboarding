@@ -9,7 +9,7 @@ You will need both **Minecraft** and **Amulet**.
 
 * **Minecraft:** A copy of [Minecraft](https://www.minecraft.net/en-us) is needed to create and view worlds to edit in Amulet. 
 
-* **Amulet:** Visit the [Amulet](https://www.amuletmc.com/) website and follow the provided instructions to download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`.  
+* **Amulet:** Visit the [Amulet](https://www.amuletmc.com/) website and follow the provided instructions to download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`. UPDATE: Amulet requires a fee now but we have a license, contact Markus or the tutor for it
 
 > **Important:** We suggest creating a shortcut for Amulet (if not created by default) for ease of access. 
 
