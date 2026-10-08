@@ -2,7 +2,7 @@
 
 Welcome to the **SlothLab** onboarding guide! In this walkthrough, you will learn how to create structures using our **Box-Split Grammar** system and generate them in **Minecraft** with **Amulet**. The structures you build will be integrated into our procedural settlement generator to create a settlement that to submit to the annual [**Generative Design in Minecraft (GDMC) Competition**](https://gendesignmc.wikidot.com/).
 
-The grammar system and architectural concepts we use are based on the research paper [**Instant Architecture in Minecraft using Box-Split Grammars** by Markus Eger (FDG '22)](https://slothlab.info/assets/pdf/eger2022fdg.pdf).
+The grammar system and architectural concepts we use are based on the research paper [**Instant Architecture in Minecraft using Box-Split Grammars**](https://slothlab.info/assets/pdf/eger2022fdg.pdf) by Markus Eger.
 
 While this academic paper might look intimidating at first, we recommend reading it to get a background on how our system works. 
 
@@ -23,8 +23,6 @@ Follow these guides in order to ensure there are no issues
 
 ---
 
-## Need Help?
+## Help
 
-If you run into issues or have questions at any point, contact our group tutor Michael via Discord or email at mdudzinski@ucsc.edu.
-
-- **Discord:** [https://discord.gg/hSRefu9Z2](https://discord.gg/hSRefu9Z2)
+If you have any questions related to the project, feel free to contact Michael anytime on Discord or via email at mdudzins@ucsc.edu.
