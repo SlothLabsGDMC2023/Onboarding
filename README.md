@@ -11,5 +11,4 @@ The concepts and grammar system we use are based on the work presented in [**Ins
  2. **[Box-Split Grammar Overview](./BOX-SPLIT-GRAMMAR.md)** 
  3. **[Your First Structure](./FIRST-STRUCTURE.md)** 
  4. **[Integration into Core](./INTEGRATION.md)** 
- 5. **[Assignments](./ASSIGNMENTS.md)** 
- 6. **[Resources](./RESOURCES.md)** 
+ 5. **[Resources](./RESOURCES.md)** 
