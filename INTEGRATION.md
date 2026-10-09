@@ -40,5 +40,3 @@ BUILDING_TYPES = [
 2. Go into Amulet and Refresh the operations list.
 3. Run the main Settlement Generator operation.
 4. Your forge should now appear as one of the buildings in the generated settlements! It will also be a toggleable option in the menu that appears when you run the generator.
-
-**Next Steps:** Great work! Feel free to check out the Assignments page to dig deeper into structure generation: **[Assignments](./ASSIGNMENTS.md)** (WIP).
