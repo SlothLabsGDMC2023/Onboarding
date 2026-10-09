@@ -1,15 +1,15 @@
 # Amulet Editor Crash Course
 
-Learn how to set up your environment and familiarize yourself with the basics of the Minecraft world editor, Amulet. 
+Learn how to set up your testing environment and familiarize yourself with the basics of the Minecraft world editor, Amulet. 
 
  > **Important:** If you do not already have Git installed or the SlothLab repo set up, click [here](./REPO-SETUP.md)!
 
 ## 1. Software Installation 
 You will need both **Minecraft** and **Amulet**.
 
-* **Minecraft:** A copy of [Minecraft](https://www.minecraft.net/en-us) is needed to create and view worlds to edit in Amulet. 
+* **Minecraft (Java Edition):** A copy of [Minecraft](https://www.minecraft.net/en-us) is needed to create and view worlds to edit in Amulet. 
 
-* **Amulet:** Visit the [Amulet](https://www.amuletmc.com/) website and follow the provided instructions to download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`. UPDATE: Amulet requires a fee now but we have a license, contact Markus or the tutor for it
+* **Amulet:** Visit [Amulet](https://shorturl.at/vZehD) and download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`.
 
 > **Important:** We suggest creating a shortcut for Amulet (if not created by default) for ease of access. 
 
@@ -51,7 +51,7 @@ Now try launching the Amulet application `amulet_app.exe` and load into your Min
 
 ## 4. Running Operations in Amulet
 
-in Amulet, **Operations** are the python scripts we use to manipulate the Minecraft world. With the Box-Split Grammar, we can easily leverage this functionality to write building generation algorithms! 
+in Amulet, **Operations** are the Python scripts we use to manipulate the Minecraft world. With the Box-Split Grammar, we can easily leverage this functionality to write building generation algorithms! 
 
 #### How to Run an Operation
 1.  **Make a Selection:** Click the **`Select`** button in the bottom UI and drag a selection box in the world. You can drag and resize each face of the selection box by clicking and dragging it.
@@ -59,7 +59,7 @@ in Amulet, **Operations** are the python scripts we use to manipulate the Minecr
 3.  **Use the Operation Menu:**
     * **Dropdown Menu:** This is where you select which operation to run.
     * **Refresh Button:** Reloads the operations from the plugins folder. **You will use this a lot** as you edit your structure generator file and want to see your changes.
-    * **Folder Icon:** This opens the folder where all the python scripts are located. This is the folder you will be working in with your code editor. The path will be something like `AppData\Local\AmuletTeam\AmuletMapEditor\plugins\operations`. 
+    * **Folder Icon:** This opens the folder where all the Python scripts are located. This is the folder you will be working in with your code editor. The path will be something like `AppData\Local\AmuletTeam\AmuletMapEditor\plugins\operations`. 
         > **Very Important:** Make sure you **copy** the contents of your locally cloned SlothLab repo into this folder so you can access the grammar properly. You may also want to copy the Operations folder path and save it somewhere to easily paste into your IDE when you choose to edit the operatons therein.
 4.  **Run the Operation:** Below this menu is the **Run Operation** button. Click this to test your script on the selected region. 
 
