@@ -9,7 +9,7 @@ You will need both **Minecraft** and **Amulet**.
 
 * **Minecraft (Java Edition):** A copy of [Minecraft](https://www.minecraft.net/en-us) is needed to create and view worlds to edit in Amulet. 
 
-* **Amulet:** Visit [Google Drive](https://shorturl.at/vZehD) and download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`.
+* **Amulet:** Visit the Google Drive provided by Markus Eger and download the software for your specific OS. Extract the ZIP and locate the `/Amulet` folder. Find `amulet_app.exe`.
 
 > **Important:** We suggest creating a shortcut for Amulet (if not created by default) for ease of access. 
 
