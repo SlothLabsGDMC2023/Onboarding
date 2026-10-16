@@ -5,8 +5,10 @@ relative_links:
   collections: true
 include:
   - README.md
+  - REPOSITORY-SETUP.md
   - AMULET-CRASH-COURSE.md
   - BOX-SPLIT-GRAMMAR.md
-  - FIRST-STRUCTURE.md
+  - BUILDING-YOUR-FIRST-STRUCTURE.md
   - INTEGRATION.md
+  - GRADIENTS.md
   - RESOURCES.md
