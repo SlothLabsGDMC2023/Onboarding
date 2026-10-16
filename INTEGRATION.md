@@ -1,42 +1,65 @@
+# Settlement Generator Integration
 
-# Integrating Your Module into the Core Generator
+Once you have a standalone structure module, the final step is to add it to the main settlement generator. This will register your structure with the settlement generator so it can appear as a building in the generated villages.
 
-Once you have a working, standalone structure module, the final step is to add it to the main `settlement/core.py` file. This will make it available to the main settlement generator and add your structure to the set of buildings generated in our village.
+## 1. Open `generator\features\palette.py`
 
-### 1. Open `settlement/core.py`
-This file orchestrates the entire settlement generation. It contains a list named `BUILDING_TYPES` which registers all available structures.
+The `generator\features\palette.py` script orchestrates village layouts, road paths, lot zoning, and structure placement. It maintains a registry of available buildings called `BUILDING_TYPES`.
 
-### 2. Add an Import Statement
-At the top of the file, in the section marked for building imports, add a line to import your new module. Let's assume you've created `MakeForge.py`.
+---
 
-```python
-# ... other imports
-# ===== BUILDING IMPORTS =====
-import MakeTower
-import MakeHouse
-import MakeForge  # <--- ADD THIS LINE
-# ============================
-# ... rest of the file
-```
+## 2. Add an Import Statement
 
-### 3. Register Your Structure in BUILDING_TYPES
-Find the BUILDING_TYPES list near the top of the file and add a new StructureType entry for your structure.
+At the top of the `generator\features\palette.py` file, notice the try blocks where structures are imported. Add an import statement for your newly created module. Let's assume you've created `MakeForge.py`:
 
 ```python
-BUILDING_TYPES = [
-    # ... other structures
-    StructureType(module=MakeTower, function_name="tower", weight=1, height_modifier=15),
-    StructureType(module=MakeForge, function_name="forge", weight=3), # <--- ADD THIS LINE
-]
+try:
+    import MakeForge
+except Exception: 
+    MakeForge = None
 ```
-`StructureType` Parameters Explained:
+
+---
+
+## 3. Register your structure in `BUILDING_TYPES`
+
+Locate the `BUILDING_TYPES` list in `generator\features\palette.py`. Add a new `BuildingType` entry for your building:
+
+```python
+if MakeForge is not None:
+    BUILDING_TYPES.append(
+        BuildingType(
+            name="forge",
+            module=MakeForge,
+            function_name="forge",
+            weight=5,
+            roles=("materials"),
+            min_height=5,
+            max_height=10,
+            min_footprint=(10, 10),
+            max_footprint=(20, 20),
+            placement="one_per_site_far",
+        )
+    )
+```
+
+---
+
+### `BuildingType` parameters explained:
+
 - `module`: The name of the module you just imported (e.g., MakeForge).
 - `function_name`: A string containing the name of your main rule function defined in the module's entrypoint (e.g., "forge").
 - `weight`: An integer that determines how frequently your structure appears. A higher weight means it's more common.
-- `height_modifier` (Optional): An integer to adjust the vertical placement. Useful for multi-level buildings like towers (the default height is more suitable for single story structures). If you notice your buildings getting squished or cut off - this is the parameter to adjust!
+- `roles`: Depending on the roles of the structure, it will be placed in a diferent location.
+- `height`: The minimum or maximum height the structure will generate to.
+- `footprint`: The minimum or maximum space the structure will take up.
+- `placement`: Depending on placement, the structure will either generate in a village or on the outskirts,
 
-### 4. Test the Integration
-1. Save your changes to core.py.
-2. Go into Amulet and Refresh the operations list.
-3. Run the main Settlement Generator operation.
-4. Your forge should now appear as one of the buildings in the generated settlements! It will also be a toggleable option in the menu that appears when you run the generator.
+## 4. Test the Integration
+1. Save your changes,
+2. Go into Amulet and Refresh the operations list. If this does not work, restart Amulet.
+3. Run the main settlement generator operation with necessary parameters.
+4. Your forge should now appear as one of the buildings in the generated settlements! 
+5. If you are interested in working on the generator, contact Michael for help.
+
+**Next Steps:** Now that you know how to integrate your structures into the settlement generator, learn how to create more elaborate textures and color palettes in the **[Gradients](./GRADIENTS.md)** guide.

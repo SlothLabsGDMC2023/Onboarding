@@ -1,33 +1,35 @@
-# Your First Structure
+# Building your First Structure
 
-Here you will learn how to create a new, standalone, structure module.
+Here you will learn how to create a new standalone structure module.
 
-> **Very Important!**
+> **Note:** Before beginning, ensure you have copied the contents from the `master` branch from the SlothLab repository into Amulet's `plugins\operations` folder. This ensures Amulet has access to the Box-Split Grammar, Settlement Generation, and other required systems. If you skip this step, your operation will not run correctly and you will be missing files. In short:
 >
-> Before beginning, ensure you have copied the contents from the _Master branch_ from the SlothLab repository into Amulet's `plugins\operations` folde. This ensures Amulet has access to the Box-Split Grammar, Settlement Generation, and other required systems. If you skip this step, your operation will not run correctly and you will be missing files. In short:
->
->* The contents of Amulet\plugins\operations should match the contents of the SlothLab Master branch.
->* When you create your own structure generation module, do so within the plugins\operations folder so you can test and run it locally.
->* If there are major updates to the Grammar or Settlement Generation code, you can safely pull from the SlothLab repo again and copy only the updated files into Amulet’s plugins\operations folder.
+>* The contents of `Amulet\plugins\operations` should match the contents of the SlothLab `master` branch.
+>* When you create your own structure generation module, do so within the `plugins\operations` folder so you can test and run it locally.
+>* If there are major updates to the Grammar or Settlement Generation code, you can safely pull from the SlothLab repository again and copy only the updated files into Amulet’s `plugins\operations` folder.
 
-### 1. Plan Your Structure
+---
 
-First, decide what you want to build! We suggest you start by thinking of a fitting building our medieval village could use (check the current integrated structures in the `core.py` file).
+### 1. Plan your First Structure
+
+To begin, decide what you want to build! We suggest you start by thinking of a fitting building that our medieval village could use. You can check the current integrated structures in the `palette.py` located in the `plugins\operations\generator\features` folder.
 
 * **Find a Reference:** We welcome you to build your own structure first in-game to explore the necessary architectural requirements, or find a reference online. A great source of in-game buildings to model your structure off of is [Build It](https://builditapp.com/).
 
 * **Think in Grammar:** Once you have a design, think about how it would have to work logically with our grammar in mind. How would you divide it into individual rows and columns? Try to imagine how you might roughly need to go about it—the types of splits, what sort of variation you would want, the block types, etc.
 
- > **Important:** You will soon notice that complex structure designs tend to be relatively difficult to replicate with the grammar, so consider simplifying the intricacies of the structure you choose for now to better get a hang of the system. 
+ > **Note:** You will soon notice that complex structure designs tend to be relatively difficult to replicate with the grammar, so consider simplifying the intricacies of the structure you choose for now to get the hang of the system. 
 
-### 2. Create Your Module File
+---
+
+### 2. Create your Module File
 Navigate to the `plugins/operations` folder.
 1.  **Create** a new Python file, e.g., `MakeForge.py`.
 2.  **Add Boilerplate Code:** At the top of your file, add the necessary imports.
 
     ```python
     # Amulet-specific imports
-    from amulet.api.selection import SelectionGroup
+    from amulet.api.selection import SelectionGroup, SelectionBox
     from GrammarBox import BoundingBox
 
     # Grammar-specific imports
@@ -37,7 +39,9 @@ Navigate to the `plugins/operations` folder.
     clearrules(__file__)
     ```
 
-### 3. Write Your Grammar Rules
+---
+
+### 3. Write your Grammar Rules
 This is where you define the structure's logic. Start with a top-level rule.
 
 ```python
@@ -58,8 +62,11 @@ def forge():
 
         fill("minecraft:stone_bricks")   # Fill the top layer
 ```
+
+---
+
 ### 4. Add the Amulet Entrypoint
-Amulet needs a specific function and dictionary to run your script. Add this to the bottom of your file. It initializes the grammar on Amulet's selection box and calls your starting rule.
+Amulet needs a specific function and dictionary to run your script. Add this to the bottom of your file to initialize the grammar on Amulet's selection box and calls your starting rule.
 ```python
 def performOperation(world, dim, selection_group, options):
     box = selection_group.selection_boxes[0]
@@ -74,19 +81,24 @@ export = {
     "operation": performOperation,
 }
 ```
-### 5. Test Your Module
 
-1. Save your MakeForge.py file.
-2. Go to Amulet, make a box selection, and click Refresh in the Operation menu.
+---
+
+### 5. Test your Module
+
+1. Save your `MakeForge.py` file.
+2. Go to Amulet, make a box selection, and click "Refresh" in the Operation menu.
 3. Your operation, "Make Forge", should now appear in the dropdown.
-4. Select it and click Run Operation. Your forge should appear in the world!
+4. Select it and click Run Operation. Your forge should now appear in the world!
 
 
 ## Example: Creating a `MakeTower` Module
    ```python
-   from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension, Constraint, reorient
-   from GrammarBox import BoundingBox
    from amulet.api.selection import SelectionGroup, SelectionBox
+   from GrammarBox import BoundingBox
+
+   from MCSplitGrammar import rule, split, void, fill, start_symbol, Dimension, clearrules, Constraint, reorient
+
    clearrules(__file__)
    weight = 1
 
@@ -105,4 +117,4 @@ export = {
       "operation": performOperation
    }
    ```
-**Next Steps:** Now that you're comfortable setting up your own structure module in Amulet, learn how to integrate your structure into our Settlement Generator with this guide: **[Integrating Your Module into the Core Generator](./INTEGRATION.md)**.
+**Next Steps:** Now that you're comfortable setting up your own structure module in Amulet, learn how to integrate your structure into our Settlement Generator with this guide: **[Integration to the Settlement Generator](./INTEGRATION.md)**.
