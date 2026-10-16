@@ -56,7 +56,7 @@ if MakeForge is not None:
 - `placement`: Depending on placement, the structure will either generate in a village or on the outskirts,
 
 ## 4. Test the Integration
-1. Save your changes,
+1. Save your changes.
 2. Go into Amulet and Refresh the operations list. If this does not work, restart Amulet.
 3. Run the main settlement generator operation with necessary parameters.
 4. Your forge should now appear as one of the buildings in the generated settlements! 
