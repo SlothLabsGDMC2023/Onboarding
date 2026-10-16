@@ -1,6 +1,6 @@
 # Gradients
 
-Gradients are an exciting new addition to SlothLab, developed by Ethan Duong. This feature gives team members a new way to texture builds using customizable parameters. To view the slideshow that this guide is based off of visit [**Quick Start Guide: Gradient Fill**](https://docs.google.com/presentation/d/1KVW5M-FEO16wP0szwOBbdVXi9Sf-WXtfIejLT--LkOY/edit?usp=sharing)
+Gradients are an exciting new addition to SlothLab, developed by Ethan Duong. This feature gives team members a new way to texture builds using customizable parameters. To view the slideshow that this guide is based off of visit [Quick Start Guide: Gradient Fill](https://docs.google.com/presentation/d/1KVW5M-FEO16wP0szwOBbdVXi9Sf-WXtfIejLT--LkOY/edit?usp=sharing)
 
 ## 1. Update your grammar files
 
